@@ -8,7 +8,8 @@ export default function caesarCipher(letter) {
 
 		let shiftLetter;
 		if (isLetterZ(letter[i])) {
-			shiftLetter = "a";
+			console.log(getAlphabetByLetterCase(letter[i])[0]);
+			shiftLetter = getAlphabetByLetterCase(letter[i])[0];
 		} else shiftLetter = getNextLetter(letter[i]);
 
 		string += shiftLetter;
@@ -32,5 +33,5 @@ function isLetter(letter) {
 }
 
 function isLetterZ(letter) {
-	return letter === "z";
+	return letter === "z" || letter === "Z";
 }
