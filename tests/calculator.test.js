@@ -2,6 +2,7 @@ import { add, subtract, divide, multiply } from "../functions/calculator";
 
 test("Add", () => {
 	expect(add(1, 2)).toBe(3);
+	expect(add(0.1, 0.2)).toBeCloseTo(0.3);
 });
 
 test("Subtract", () => {
