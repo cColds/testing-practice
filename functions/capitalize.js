@@ -1,1 +1,3 @@
-export default function capitalize(string) {}
+export default function capitalize(string) {
+	return string.toUpperCase();
+}
